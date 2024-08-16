@@ -15,7 +15,6 @@ const read = () => {
     return newArr
 }
 
-// console.log(read());
 
 module.exports = {read}
 
