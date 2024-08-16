@@ -1,2 +1,9 @@
-// Используйте для решения судоку необходимые функции из файла sudoku.js
-console.log("Hellow");
+const { read } = require('./funcRead')
+const { solvedSudoku } = require('./sudoku')
+
+const run = () => {
+    const sudoku = read()
+    return solvedSudoku(sudoku)
+}
+
+console.table(run())
